@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#123c4b">
+  <meta name="description" content="Track AyosBrgy sample reports using a demo reference number and status timeline.">
+  <title>Track a Report | AyosBrgy</title><link rel="icon" type="image/svg+xml" href="assets/logo.svg"><link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script><script defer src="js/track.js"></script></head>
+<body><a class="skip-link" href="#main-content">Skip to content</a><div id="site-header"></div>
+  <main id="main-content"><section class="page-banner"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Track a Report</div><span class="eyebrow">No account required</span><h1>Track a Report</h1><p>Check the status of your submitted demo report using the reference number you received.</p></div></section>
+    <section class="content-section"><div class="container">
+      <div class="panel search-panel"><div class="panel-title"><span>⌕</span><h2>Search by reference number</h2></div>
+        <form id="track-form" class="search-form"><label for="reference-id" class="screen-reader-only">Reference number</label><input class="input" id="reference-id" type="text" autocomplete="off" required maxlength="40" placeholder="e.g. BRGY-2026-0001"><button class="btn btn-primary" type="submit">Search Report <span aria-hidden="true">→</span></button></form>
+        <p class="helper">Try <button type="button" id="fill-sample" style="border:0;background:none;padding:0;color:var(--teal);font-size:inherit;text-decoration:underline;font-weight:700">BRGY-2026-0001</button> for an example. Reports only exist in this browser.</p>
+      </div>
+      <div id="track-feedback" class="alert-hidden notice" role="status" aria-live="polite"></div>
+      <div id="report-result" class="alert-hidden" aria-live="polite"></div>
+      <div id="track-placeholder" class="panel empty-state"><div style="font-size:2rem;color:var(--teal)" aria-hidden="true">⌕</div><h2 style="font-size:1.3rem">Your report status appears here</h2><p>Enter a reference number above to view the report summary, latest update, and step-by-step status timeline.</p></div>
+      <div class="notice notice-warning track-hint"><strong>Demo information only:</strong> This page uses sample records and this browser's local storage. It cannot retrieve real government reports or reports from another device. Reporter contact details are not displayed.</div>
+    </div></section>
+  </main><div id="site-footer"></div>
+</body></html>
