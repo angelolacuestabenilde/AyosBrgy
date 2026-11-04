@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#123c4b">
+  <meta name="description" content="Submit a demonstration pothole, road obstruction, or public facility issue report in AyosBrgy.">
+  <title>Report an Issue | AyosBrgy</title><link rel="icon" type="image/svg+xml" href="assets/logo.svg"><link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script><script defer src="js/report.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a><div id="site-header"></div>
+  <main id="main-content"><section class="page-banner"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / Report an Issue</div><span class="eyebrow">Community reporting</span><h1>Report an Issue</h1><p>Tell us what happened and where. Fields marked <span class="required">*</span> are required. This is a student demo: no real agency receives your information.</p></div></section>
+    <section class="content-section"><div class="container">
+      <div class="notice notice-warning" style="margin-bottom:20px"><strong>Classroom demo:</strong> Use invented names/contact details. The demo validates your entry and stores a report summary in this browser only. Photo contents and personal contact information are not saved.</div>
+      <div id="submission-result" class="success-box alert-hidden" role="status" aria-live="polite" tabindex="-1"></div>
+      <form id="report-form" novalidate>
+        <div class="form-layout">
+          <section class="panel" aria-labelledby="issue-heading">
+            <div class="panel-title"><span>1</span><h2 id="issue-heading">Describe the issue</h2></div>
+            <div class="form-fields">
+              <div class="two-col">
+                <div class="field"><label for="category">Category <span class="required">*</span></label><select id="category" name="category" required><option value="">Select a category</option><option value="pothole">Pothole</option><option value="obstruction">Road Obstruction</option><option value="facility">Damaged Public Facility</option></select><span class="error" data-error-for="category"></span></div>
+                <div class="field"><label for="severity">Severity <span class="required">*</span></label><select id="severity" name="severity" required><option value="">Select severity</option><option value="Low">Low</option><option value="Medium">Medium</option><option value="High">High</option></select><span class="error" data-error-for="severity"></span></div>
+              </div>
+              <div class="field"><label for="location">Street / address <span class="required">*</span></label><input class="input" id="location" name="location" required maxlength="150" placeholder="e.g. Rizal Street near the barangay hall"><span class="helper">Between 5 and 150 characters.</span><span class="error" data-error-for="location"></span></div>
+              <div class="field"><label for="landmark">Nearby landmark <span class="optional">(optional)</span></label><input class="input" id="landmark" name="landmark" maxlength="100" placeholder="e.g. Covered court or waiting shed"><span class="error" data-error-for="landmark"></span></div>
+              <div class="field"><label for="description">Description <span class="required">*</span></label><textarea id="description" name="description" minlength="20" maxlength="500" required placeholder="Describe what happened, how it affects people, and any visible hazards."></textarea><span class="helper counter"><span id="description-count">0</span> / 500 characters (minimum 20)</span><span class="error" data-error-for="description"></span></div>
+              <div class="field"><label for="observed-on">Date observed <span class="required">*</span></label><input class="input" type="date" id="observed-on" name="observedOn" required><span class="helper">Date must be within the past 30 days, not in the future.</span><span class="error" data-error-for="observed-on"></span></div>
+              <div class="notice"><strong>Location tip:</strong> If there is no house number, describe a recognizable landmark so the barangay team could find the issue. A map pin would require future integration.</div>
+            </div>
+          </section>
+          <section class="panel" aria-labelledby="evidence-heading">
+            <div class="panel-title"><span>2</span><h2 id="evidence-heading">Evidence & contact details</h2></div>
+            <div class="form-fields">
+              <div class="file-zone"><div class="file-icon" aria-hidden="true">▧</div><label for="photos">Add photos <span class="optional">(optional)</span></label><div class="helper">JPG or PNG · up to 3 files · max 5 MB each</div><input id="photos" name="photos" type="file" accept="image/jpeg,image/png,.jpg,.jpeg,.png" multiple><div class="error" data-error-for="photos"></div><div class="helper" id="photo-summary" aria-live="polite">No photos selected.</div></div>
+              <div class="field"><label for="name">Full name <span class="required">*</span></label><input class="input" id="name" name="name" autocomplete="name" maxlength="60" required placeholder="e.g. Juan Dela Cruz"><span class="helper">2–60 letters, spaces, periods, and hyphens.</span><span class="error" data-error-for="name"></span></div>
+              <div class="two-col">
+                <div class="field"><label for="email">Email <span class="optional">(optional)</span></label><input class="input" type="email" id="email" name="email" autocomplete="email" placeholder="name@example.com"><span class="error" data-error-for="email"></span></div>
+                <div class="field"><label for="phone">Mobile no. <span class="optional">(optional)</span></label><input class="input" id="phone" name="phone" autocomplete="tel" placeholder="09XXXXXXXXX"><span class="error" data-error-for="phone"></span></div>
+              </div>
+              <p class="helper" style="margin:0">At least one contact method (email or Philippine mobile number) is required.</p>
+              <div class="check-row"><input type="checkbox" id="privacy" name="privacy" required><label for="privacy">I understand this is a <strong>student demonstration</strong> and agree to use test information only. <span class="required">*</span></label></div><span class="error" data-error-for="privacy"></span>
+              <div class="check-row"><input type="checkbox" id="human" name="human" required><label for="human">I confirm that this is a test submission. <span class="required">*</span></label></div><span class="helper">This checkbox is a mock anti-spam step, not a real CAPTCHA.</span><span class="error" data-error-for="human"></span>
+              <div class="form-actions"><button class="btn btn-primary btn-block" type="submit">Review & Submit Demo Report <span aria-hidden="true">→</span></button><p class="helper" style="text-align:center;margin:0">Please check your details before submitting. No server is contacted.</p></div>
+            </div>
+          </section>
+        </div>
+      </form>
+    </div></section>
+  </main><div id="site-footer"></div>
+</body></html>
