@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#123c4b">
+  <meta name="description" content="AyosBrgy is a student prototype for reporting barangay potholes, road obstructions, and damaged public facilities.">
+  <title>AyosBrgy | Report a Community Issue</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div id="site-header"></div>
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">An easier way to help your barangay</span>
+          <h1 id="hero-title">See a problem?<br><em>Let's make it right.</em></h1>
+          <p class="lead">From potholes to blocked roads and damaged public facilities, AyosBrgy helps you describe the issue, receive a reference number, and follow its progress.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="report.html">Report an Issue <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-outline" href="track.html">Track a Report <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-proof"><div class="proof-icons" aria-hidden="true"><span>✓</span><span>✓</span><span>✓</span></div>No citizen account needed in this demo</div>
+        </div>
+        <div class="hero-visual" aria-label="Illustrative report status card">
+          <div class="hero-halo" aria-hidden="true"></div>
+          <div class="preview-card">
+            <div class="preview-top"><span>AYOSBRGY / REPORT PREVIEW</span><small>DEMO DATA</small></div>
+            <div class="preview-body">
+              <div class="preview-heading"><h3>Pothole reported</h3><span class="status-badge status-review">Under Review</span></div>
+              <div class="preview-map" aria-hidden="true"><div class="preview-pin"><span>!</span></div></div>
+              <div class="preview-line"><span>Category</span><strong>Pothole</strong></div>
+              <div class="preview-line"><span>Location</span><strong>Near covered court</strong></div>
+              <div class="preview-line"><span>Reference ID</span><strong>BRGY-2026-0001</strong></div>
+              <div class="preview-progress" aria-hidden="true"><span class="done"></span><span class="done"></span><span></span><span></span><span></span></div>
+            </div>
+          </div>
+          <div class="float-tag">✓ Easy status tracking</div>
+        </div>
+      </div>
+    </section>
+    <section class="quick-track" aria-label="Quick reference number lookup">
+      <div class="container quick-track-inner">
+        <div><h2>Already submitted a report?</h2><p>Enter your reference number to see the latest demo status.</p></div>
+        <form id="home-track-form" class="track-inline">
+          <label class="screen-reader-only" for="home-ref">Report reference number</label>
+          <input id="home-ref" class="input" type="text" placeholder="e.g. BRGY-2026-0001" required maxlength="40" autocomplete="off">
+          <button type="submit" class="btn btn-dark">View Status <span aria-hidden="true">→</span></button>
+        </form>
+      </div>
+    </section>
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">What can you report?</span><h2>Three types of issues. One place to speak up.</h2><p>AyosBrgy focuses on practical infrastructure issues that affect everyday travel and shared spaces.</p></div>
+        <div class="card-grid">
+          <article class="info-card"><div class="card-icon" aria-hidden="true">◈</div><h3>Potholes</h3><p>Report damaged road surfaces, unsafe holes, or areas that need repair.</p><div class="meta">Road surface issues</div></article>
+          <article class="info-card"><div class="card-icon" aria-hidden="true">⇥</div><h3>Road Obstructions</h3><p>Flag debris, fallen trees, and other objects that block streets or sidewalks.</p><div class="meta">Blocked access and pathways</div></article>
+          <article class="info-card"><div class="card-icon" aria-hidden="true">⌂</div><h3>Damaged Public Facilities</h3><p>Identify broken waiting sheds, streetlights, drainage covers, and similar facilities.</p><div class="meta">Community infrastructure</div></article>
+        </div>
+      </div>
+    </section>
+    <section class="section steps-section" id="how-it-works">
+      <div class="container"><div class="section-head"><span class="eyebrow">Simple from start to finish</span><h2>How AyosBrgy works</h2><p>Complete a report in a few steps. This prototype demonstrates the citizen journey without contacting any real government office.</p></div>
+        <div class="steps-grid">
+          <div class="step"><span class="step-number">01</span><h3>Describe the issue</h3><p>Select a category, add a location and description, and optionally upload evidence.</p></div>
+          <div class="step"><span class="step-number">02</span><h3>Receive your ID</h3><p>Get a reference number when the demo form passes validation. Save it for later.</p></div>
+          <div class="step"><span class="step-number">03</span><h3>Track the progress</h3><p>Enter your number to see sample status updates and a timeline of actions.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="statistics-title">
+      <div class="container"><div class="section-head"><span class="eyebrow">Example figures</span><h2 id="statistics-title">Demo reports at a glance</h2><p>These counts reflect sample records and reports created in this browser. They are not real barangay statistics.</p></div>
+        <div class="metrics"><div class="metric"><strong data-demo-count="total">4</strong><span>Reports in this demo</span></div><div class="metric"><strong data-demo-count="active">2</strong><span>Assigned or in progress</span></div><div class="metric"><strong data-demo-count="resolved">0</strong><span>Resolved or closed</span></div></div>
+      </div>
+    </section>
+    <section class="section" id="about" style="padding-top:20px">
+      <div class="container about-layout"><div><span class="eyebrow">About the concept</span><h2>Built for clearer community reporting.</h2><p>AyosBrgy is a proposed barangay-level service that makes it easier for residents, employees, commuters, and property owners to report community infrastructure concerns.</p><p>In the planned real-world workflow, the Barangay Secretary's Office reviews reports, then assigns them to the appropriate Kagawad or maintenance team. Issues on city- or nationally-owned roads may be endorsed to the relevant agency.</p><a class="btn btn-outline" href="report.html">Start a report <span aria-hidden="true">→</span></a></div>
+        <div class="about-box"><h3>What the prototype demonstrates</h3><ul><li>Accessible citizen reporting without an account</li><li>Photo validation and a reference number</li><li>Sample status updates and a history timeline</li><li>A local administrative review interface</li></ul></div></div>
+    </section>
+    <section class="section" id="faq" style="padding-top:20px"><div class="container"><div class="section-head"><span class="eyebrow">Questions and answers</span><h2>Frequently asked questions</h2></div>
+      <div class="faq-list"><details><summary>Who can report an issue?</summary><p>The proposed service is intended for barangay residents and other people who encounter problems while passing through the area. This student demo accepts example reports only.</p></details>
+        <details><summary>Do I need a photo to submit?</summary><p>No. Photos are encouraged but optional. The form can check up to three JPG or PNG images, each no larger than 5 MB. In this prototype, image contents are not uploaded to a server.</p></details>
+        <details><summary>How do I track my report?</summary><p>Save the reference number shown after submission and enter it on the Track page. You can also try BRGY-2026-0001 as a sample.</p></details>
+        <details><summary>Will a real barangay receive my report?</summary><p>No. AyosBrgy is currently a classroom front-end prototype with browser-local demonstration data. No barangay is connected to it.</p></details></div></div>
+    </section>
+    <section class="section" id="privacy" style="padding-top:10px"><div class="container"><div class="notice notice-warning"><strong>Privacy & demonstration notice:</strong> For classroom testing, please use fictional personal information only. Submitted report details, but not reporter name/contact information or photo contents, may be saved to this browser's local storage. These records do not sync between devices. This prototype does not authenticate staff or process real-world reports.</div></div></section>
+    <section class="cta-band"><div class="container cta-band-inner"><div><h2>Help make every street safer.</h2><p>Your observation can be the first step toward an improvement.</p></div><a class="btn" href="report.html">Submit a Demo Report <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>
